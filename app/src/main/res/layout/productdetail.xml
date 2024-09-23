@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recycler_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/detail_item_list_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                style="@style/CardView.Item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/detail_item_image"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_launcher_foreground"/>
+
+                    <TextView
+                        android:id="@+id/detail_item_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:lines="2"
+                        android:maxLines="3"
+                        android:textColor="@color/trendyol_default_color"
+                        android:textSize="@dimen/text_title_size_big"
+                        android:ellipsize="end"
+                        android:text="Trendyol-Man Tshirt"/>
+
+                    <TextView
+                        android:id="@+id/detail_item_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:lines="2"
+                        android:layout_marginTop="@dimen/linear_layout_item_margin"
+                        android:maxLines="3"
+                        android:textSize="@dimen/text_title_size_default"
+                        android:text="15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın."/>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/linear_layout_item_margin"
+                        android:id="@+id/detail_item_basket_price_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/product_basket_price"
+                        android:textSize="@dimen/text_title_size_default"/>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/linear_layout_item_margin"
+                        android:id="@+id/item_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/trendyol_default_color"
+                        android:textSize="@dimen/text_title_size_default"
+                        android:textStyle="bold"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/item_basket_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:backgroundTint="@color/trendyol_default_color"
+                        app:cornerRadius="@dimen/button_margin_default"
+                        android:layout_margin="@dimen/button_margin_default"
+                        android:text="@string/add_item_into_basket"/>
+                </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>

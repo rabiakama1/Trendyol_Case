@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RecyclerView">
+        <item name="android:clipToPadding">false</item>
+        <item name="android:overScrollMode">ifContentScrolls</item>
+    </style>
+
+    <style name="ProgressBar">
+        <item name="android:layout_margin">@dimen/progress_bar_margin</item>
+    </style>
+
+
+    <style name="RecyclerCardView" parent="CardView">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardCornerRadius">@dimen/list_card_view_radius</item>
+    </style>
+
+    <style name="CardView.Item">
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+
+</resources>

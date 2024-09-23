@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestCase</string>
+    <string name="product_basket_price">Sepet Fiyatı</string>
+    <string name="add_item_into_basket">Sepet Ekle</string>
+</resources>
